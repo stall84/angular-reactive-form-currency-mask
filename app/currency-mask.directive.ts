@@ -24,7 +24,7 @@ export class CurrencyMaskDirective {
     if (backspace && newVal.length <= 6) {
       newVal = newVal.substring(0, newVal.length - 1);
     }
-
+// Add regex replacement for decimal points
     if (newVal.length === 0) {
       newVal = '';
     } else if (newVal.length <= 3) {
